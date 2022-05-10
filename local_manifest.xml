@@ -7,12 +7,12 @@
       <remote name="ArrowOS"
           fetch="https://github.com/ArrowOS" />
 
-      <remote name="VoltageOS-Devices"
+      <remote name="vos"
           fetch="https://github.com/VoltageOS-Devices" />
       
-  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="VoltageOS-Devices" revision="12"/>
-  <project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="VoltageOS-Devices" revision="12"/>
-  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="VoltageOS-Devices" revision="12" />
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="vos" revision="12"/>
+  <project path="device/xiaomi/sdm660-common" name="android_device_xiaomi_sdm660-common" remote="vos" revision="12"/>
+  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="vos" revision="12" />
   <project path="vendor/xiaomi/sdm660-common" name="android_vendor_xiaomi_sdm660-common" remote="Shreedhan003" revision="arrow-12.0" />
   <project path="kernel/xiaomi/sdm660" name="android_kernel_xiaomi_sdm660.git" remote="Shreedhan003" revision="arrow-12.1" />
   <project path="device/xiaomi/extra" name="vendor_xiaomi_sdm660-common-extra.git" remote="Shreedhan003" revision="twelve" />      
