@@ -3,26 +3,19 @@
 
       <remote name="ImPrashantt"
           fetch="https://github.com/ImPrashantt" />        
-      
-      <remote name="ArrowOS"
-          fetch="https://github.com/ArrowOS" />   
-      
-      <remote name="projects-nexus"
-          fetch="https://github.com/projects-nexus" />         
-      
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-1" remote="ImPrashantt" revision="twelve"/>
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="test" />
-  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="projects-nexus" revision="qti" />      
-      
-    <!-- Replacements -->
-      
-  <remove-project name="android_hardware_qcom_display"/>
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-12.0-caf-msm8998"/>
-      
-  <remove-project name="android_hardware_qcom_audio"/>
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="ArrowOS" revision="arrow-12.0-caf-msm8998"/>
 
-  <remove-project name="android_hardware_qcom_media"/>
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="ArrowOS" revision="arrow-12.0-caf-msm8998"/>
-  
+      <remote name="projects-nexus"
+          fetch="https://github.com/projects-nexus" />
+      
+      <remote name="kdrag0n"
+          fetch="https://github.com/kdrag0n" />         
+      
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
+      
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
+      
+  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="projects-nexus" revision="qti" />
+      
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kdrag0n" revision="master" />      
+      
 </manifest>
