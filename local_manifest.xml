@@ -10,7 +10,7 @@
       <remote name="kdrag0n"
           fetch="https://github.com/kdrag0n" />         
       
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="ImPrashantt" revision="bliss" />
       
   <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
       
