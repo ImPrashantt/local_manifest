@@ -2,10 +2,29 @@
 <manifest>
 
       <remote name="ImPrashantt"
-          fetch="https://github.com/ImPrashantt" />               
-  
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-1" remote="ImPrashantt" revision="twelve"/>
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="test" />
-  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="ImPrashantt" revision="eas-caf" />      
+          fetch="https://github.com/ImPrashantt" />        
+
+      <remote name="projects-nexus"
+          fetch="https://github.com/projects-nexus" />
+      
+      <remote name="kdrag0n"
+          fetch="https://github.com/kdrag0n" />      
+      
+      <remote name="LineageOS"
+          fetch="https://github.com/LineageOS" />      
+      
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="ImPrashantt" revision="arrow" />
+      
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
+      
+  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="projects-nexus" revision="qti" />
+      
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kdrag0n" revision="master" />      
+      
+    <!-- Replacements -->
+      
+  <remove-project name="android_packages_resources_devicesettings" />
+      
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="LineageOS" revision="lineage-19.1"/>
       
 </manifest>
