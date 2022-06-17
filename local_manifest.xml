@@ -4,8 +4,8 @@
       <remote name="ImPrashantt"
           fetch="https://github.com/ImPrashantt" />        
 
-      <remote name="projects-nexus"
-          fetch="https://github.com/projects-nexus" />
+      <remote name="STRMB"
+          fetch="https://github.com/stormbreaker-project" />
       
       <remote name="kdrag0n"
           fetch="https://github.com/kdrag0n" />      
@@ -17,7 +17,7 @@
       
   <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
       
-  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="projects-nexus" revision="qti" />
+  <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="STRMB" revision="qti-oldcam-eas" />
       
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kdrag0n" revision="master" />      
       
