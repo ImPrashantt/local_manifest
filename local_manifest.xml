@@ -13,7 +13,7 @@
       <remote name="LineageOS"
           fetch="https://github.com/LineageOS" />      
       
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="ImPrashantt" revision="arrow" />
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
       
   <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
       
