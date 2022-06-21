@@ -5,11 +5,16 @@
           fetch="https://github.com/ImPrashantt" />       
       
       <remote name="LineageOS"
-          fetch="https://github.com/LineageOS" />      
+          fetch="https://github.com/LineageOS" />  
+      
+      <remote name="nexus"
+          fetch="https://github.com/projects-nexus" />      
       
   <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />
       
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />    
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="twelve" />   
+      
+  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="nexus" revision="qti" />       
       
     <!-- Replacements -->
       
