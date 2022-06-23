@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-      <remote name="ImPrashantt"
-          fetch="https://github.com/ImPrashantt" />
-      
-      <remote name="stormbreaker-project"
-          fetch="https://github.com/stormbreaker-project" />
-      
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="ImPrashantt" revision="eleven" />
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="ImPrashantt" revision="11" />
-  <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="stormbreaker-project" revision="oldcam-eas" />
+  <remote name="Prash"
+          fetch="https://github.com/Prashant-1695" />
   
+  <remote name="stormbreaker-project"
+          fetch="https://github.com/stormbreaker-project" />   
   
-</manifest>
+  <remote name="kdrag0n"
+          fetch="https://github.com/kdrag0n" />                 
+  
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prash" revision="12.1" /> 
+  
+  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="Prash" revision="12.1" />
+  
+  <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="stormbreaker-project" revision="qti-oldcam-eas" />
+  
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kdrag0n" revision="master" />
+    
+</manifest>  
