@@ -1,29 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-      <remote name="ImPrashantt"
-          fetch="https://github.com/ImPrashantt" />
+        <remote name="Prash"
+                fetch="https://github.com/Prashant-1695" />
+        <remote name="nexus"
+                fetch="https://github.com/projects-nexus" />      
+        <remote name="xenxynon"
+                fetch="https://github.com/xenxynon" />
+        <remote name="XS"
+                fetch="https://github.com/XenStuff" />
+        <remote name="lab"
+                fetch="https://github.com/xenxynon-lab-404"
+                revision="refs/heads/shinka" />
 
-      <remote name="projects-nexus"
-          fetch="https://github.com/projects-nexus" />      
+        <!-- Trees -->
+        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prash" revision="shinka" />
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="Prash" revision="12.1" />
+        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
 
-      <remote name="ArrowOS"
-          fetch="https://github.com/ArrowOS" />   
-      
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-1" remote="ImPrashantt" revision="twelve" />
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender-1" remote="ImPrashantt" revision="twelve" />
-  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="projects-nexus" revision="eas-caf-qti" />
-  
-  <remove-project name="bionic"/>
-  <project path="bionic" name="bionic-1" remote="ImPrashantt" revision="radiant"/>      
-  
-  <remove-project name="android_hardware_qcom_audio"/>
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="ArrowOS" revision="arrow-12.0-caf-msm8998" />      
-  
-  <remove-project name="android_hardware_qcom_display"/>
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-12.0-caf-msm8998" />      
+        <!-- hals -->
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="lab" />
+        <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="lab" />
+        <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="lab" />
 
-  <remove-project name="android_hardware_qcom_media"/>
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="ArrowOS" revision="arrow-12.0-caf-msm8998" />      
+        <!-- kernel -->
+        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="nexus" revision="qti" clone-depth="1" />
+
+        <!-- DeviceSettings -->
+        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
+
+        <!-- extras -->
+        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
+        <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
+        <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
+        </project>
+        <remove-project name="android_bionic" />
+        <project path="bionic" name="bionic" remote="lab" />
+        <remove-project name="android_vendor_404" />
+        <project path="vendor/404" name="android_vendor_404" remote="lab" />
+        <remove-project name="platform/vendor/qcom-opensource/usb" />
+        <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" />
+        <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+        </project>
 
 </manifest>
