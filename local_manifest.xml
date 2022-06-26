@@ -38,5 +38,4 @@
         <project path="bionic" name="bionic" remote="lab" />
         <remove-project name="android_vendor_404" />
         <project path="vendor/404" name="android_vendor_404" remote="lab" />
-        </project>
 </manifest>
