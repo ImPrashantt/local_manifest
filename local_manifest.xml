@@ -38,9 +38,5 @@
         <project path="bionic" name="bionic" remote="lab" />
         <remove-project name="android_vendor_404" />
         <project path="vendor/404" name="android_vendor_404" remote="lab" />
-        <remove-project name="platform/vendor/qcom-opensource/usb" />
-        <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" />
-        <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
         </project>
-
 </manifest>
