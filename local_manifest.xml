@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+        <remote name="wHo-EM-i"
+                fetch="https://github.com/wHo-EM-i" />    
         <remote name="Prash"
                 fetch="https://github.com/Prashant-1695" />
         <remote name="nexus"
@@ -38,4 +40,9 @@
         <project path="bionic" name="bionic" remote="lab" />
         <remove-project name="android_vendor_404" />
         <project path="vendor/404" name="android_vendor_404" remote="lab" />
+        <project path="hardware/google/pixel" name="hw_google_pixel" groups="generic_fs,pixel" remote="wHo-EM-i" revision="12.1" />
+        <remove-project name="platform/vendor/qcom-opensource/usb" />
+        <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" >
+        <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+        </project>        
 </manifest>
