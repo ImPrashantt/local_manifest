@@ -44,5 +44,8 @@
         <remove-project name="platform/vendor/qcom-opensource/usb" />
         <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" >
         <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
-        </project>        
+        </project>  
+        <remove-project name="proprietary_vendor_qcom_common" />
+        <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
+        
 </manifest>
