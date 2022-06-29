@@ -19,4 +19,12 @@
       
   <project path="bionic" name="bionic" remote="Prash" revision="superior" />  
       
+    <!-- Remove -->
+
+  <remove-project name="android_hardware_qcom_audio" />
+
+  <remove-project name="android_hardware_qcom_display" />
+
+  <remove-project name="android_hardware_qcom_media" />      
+      
 </manifest>
