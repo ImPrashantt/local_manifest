@@ -17,6 +17,6 @@
  
   <remove-project name="android_bionic" />
       
-  <project path="bionic" name="bionic" remote="ImPrashantt" revision="superior" />  
+  <project path="bionic" name="bionic" remote="Prash" revision="superior" />  
       
 </manifest>
