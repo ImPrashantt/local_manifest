@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-
-      <remote name="LDD"
-          fetch="https://github.com/lavender-dump" />        
+<manifest>      
 
       <remote name="projects-nexus"
           fetch="https://github.com/projects-nexus" />
-      
-      <remote name="kdrag0n"
-          fetch="https://github.com/kdrag0n" />   
              
-      <remote name="ImPrashantt"
-          fetch="https://github.com/ImPrashantt" />       
+      <remote name="Prash"
+          fetch="https://github.com/Prashant-1695" />       
       
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-1" remote="LDD" revision="twelve" />
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prash" revision="twelve" />
       
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender-1" remote="LDD" revision="twelve" />
+  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender-1" remote="Prash" revision="12.1" />
       
-  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="projects-nexus" revision="qti" />
-      
-  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kdrag0n" revision="master" />      
+  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="projects-nexus" revision="qti" />     
       
     <!-- Replacements -->
  
