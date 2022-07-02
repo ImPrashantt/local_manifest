@@ -4,12 +4,15 @@
       <remote name="projects-nexus"
           fetch="https://github.com/projects-nexus" />
              
+      <remote name="LD"
+          fetch="https://github.com/lavender-dump" />     
+      
       <remote name="Prash"
-          fetch="https://github.com/Prashant-1695" />       
+          fetch="https://github.com/Prashant-1695" />        
       
-  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prash" revision="twelve" />
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="LD" revision="12.1" />
       
-  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="Prash" revision="12.1" />
+  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="LD" revision="12.1" />
       
   <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="projects-nexus" revision="qti" />     
       
@@ -18,13 +21,5 @@
   <remove-project name="android_bionic" />
       
   <project path="bionic" name="bionic" remote="Prash" revision="superior" />  
-      
-    <!-- Remove -->
-
-  <remove-project name="android_hardware_qcom_audio" />
-
-  <remove-project name="android_hardware_qcom_display" />
-
-  <remove-project name="android_hardware_qcom_media" />      
       
 </manifest>
