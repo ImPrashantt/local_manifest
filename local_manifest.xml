@@ -16,7 +16,6 @@
                 revision="refs/heads/shinka" />
 
         <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prash" revision="caf-12.1" />
         <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="Prash" revision="caf-12.1" />
         <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
 
