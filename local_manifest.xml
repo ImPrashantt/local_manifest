@@ -40,7 +40,7 @@
         <remove-project name="android_bionic" />
         <project path="bionic" name="bionic" remote="lab" />
         <remove-project name="android_vendor_404" />
-        <project path="vendor/404" name="android_vendor_404" remote="LD" revision="shinak" />
+        <project path="vendor/404" name="android_vendor_404" remote="LD" revision="shinka" />
         <project path="hardware/google/pixel" name="hw_google_pixel" groups="generic_fs,pixel" remote="wHo-EM-i" revision="12.1" />
         <remove-project name="platform/vendor/qcom-opensource/usb" />
         <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" >
