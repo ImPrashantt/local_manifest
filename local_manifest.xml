@@ -5,8 +5,10 @@
                 fetch="https://github.com/wHo-EM-i" />    
         <remote name="Prash"
                 fetch="https://github.com/Prashant-1695" />
-        <remote name="nexus"
-                fetch="https://github.com/projects-nexus" />      
+        <remote name="nexus"               
+                fetch="https://github.com/projects-nexus" />   
+        <remote name="LD"               
+                fetch="https://github.com/lavender-dump" />         
         <remote name="xenxynon"
                 fetch="https://github.com/xenxynon" />
         <remote name="XS"
@@ -38,7 +40,7 @@
         <remove-project name="android_bionic" />
         <project path="bionic" name="bionic" remote="lab" />
         <remove-project name="android_vendor_404" />
-        <project path="vendor/404" name="android_vendor_404" remote="lab" />
+        <project path="vendor/404" name="android_vendor_404" remote="LD" revision="shinak" />
         <project path="hardware/google/pixel" name="hw_google_pixel" groups="generic_fs,pixel" remote="wHo-EM-i" revision="12.1" />
         <remove-project name="platform/vendor/qcom-opensource/usb" />
         <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" >
