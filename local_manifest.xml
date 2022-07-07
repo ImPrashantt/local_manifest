@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-      <remote name="ImPrashantt"
-          fetch="https://github.com/ImPrashantt" />           
-      
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-1" remote="ImPrashantt" revision="aosp"/>
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender-1" remote="ImPrashantt" revision="twelve" />
-  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="ImPrashantt" revision="eas-caf" />      
+  <remote name="ImPrashantt"
+          fetch="https://github.com/Prashant-1695" />
+  
+  <remote name="nexus"
+          fetch="https://github.com/projects-nexus" />  
+  
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="ImPrashantt" revision="12.1" /> 
+  
+  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="ImPrashantt" revision="12.1" />
+  
+  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="nexus" revision="qti" />
+ 
+</manifest>
 
-</manifest>      
+
+  
+
+  
+
