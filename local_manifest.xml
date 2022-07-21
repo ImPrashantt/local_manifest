@@ -2,43 +2,23 @@
 <manifest>
 
       <remote name="ImPrashantt"
-          fetch="https://github.com/ImPrashantt" />        
+          fetch="https://github.com/Prashant-1695" />        
       
-      <remote name="ArrowOS"
-          fetch="https://github.com/ArrowOS" />  
+      <remote name="SB"
+          fetch="https://github.com/Syberia-lavender" />  
       
-      <remote name="PixelExperience"
-          fetch="https://github.com/PixelExperience" />
-      
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender-1" remote="ImPrashantt" revision="twelve"/>
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender-1" remote="ImPrashantt" revision="twelve" />
-  <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="ImPrashantt" revision="eas-caf" />      
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender-1" remote="ImPrashantt" revision="11"/>
+  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender-1" remote="SB" revision="11" />
+  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="ImPrashantt" revision="qti" />      
       
     <!-- Replacements -->
       
-  <remove-project name="hardware_qcom-caf_msm8998_display"/>
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-12.1-caf-msm8998"/>
+  <project path="hardware/qcom/display" name="hardware_qcom-caf_display_msm8998" remote="ImPrashantt" revision="11-re"/>
       
-  <remove-project name="hardware_qcom-caf_msm8998_audio"/>
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="ArrowOS" revision="arrow-12.1-caf-msm8998"/>
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom-caf_audio_msm8998" remote="ImPrashantt" revision="11"/>
 
-  <remove-project name="hardware_qcom-caf_msm8998_media"/>
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="ArrowOS" revision="arrow-12.1-caf-msm8998"/>
+  <project path="hardware/qcom/media" name="hardware_qcom-caf_media_msm8998" remote="ImPrashantt" revision="11"/>
       
-  <remove-project name="build"/>
-    <project path="build/make" name="build" remote="ImPrashantt" revision="twelve">
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="build/soong" name="build_soong" remote="PixelExperience" revision="twelve">
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
-  <project path="build/blueprint" name="build_blueprint" remote="PixelExperience" revision="twelve" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="ImPrashantt" revision="arrow-11.0"/>      
       
 </manifest>
