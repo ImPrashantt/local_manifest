@@ -7,7 +7,7 @@
       <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />           
       
-  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prashant-1695" revision="12.1" />
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prashant-1695" revision="fluid" />
       
   <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="Prashant-1695" revision="12.1" />
       
