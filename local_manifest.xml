@@ -10,7 +10,7 @@
   <remote name="wHo-EM-i"
           fetch="https://github.com/wHo-EM-i" />  
   
-  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="ImPrashantt" revision="12.1=CLO" /> 
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="ImPrashantt" revision="12.1-CLO" /> 
   
   <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="ImPrashantt" revision="12.1-CLO" />
   
