@@ -19,9 +19,9 @@
   <!-- Remove -->  
 
   <remove-project name="platform/vendor/qcom-opensource/usb" />
-  <remove-project name="android_hardware_qcom_display" />
+  <--!<remove-project name="android_hardware_qcom_display" />
   <remove-project name="android_hardware_qcom_audio" />
-  <remove-project name="android_hardware_qcom_media" />
+  <remove-project name="android_hardware_qcom_media" />-->
   <remove-project name="android_vendor_pixeldust" />  
   
   <!-- Extras -->  
