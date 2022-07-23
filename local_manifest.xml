@@ -22,13 +22,18 @@
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="vendor/pixeldust" />  
   
   <!-- Extras -->  
   
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
-  </project>-->  
+  </project>
+ 
+  <project path="vendor/pixeldust" name="android_vendor_pixeldust" revision="sc-v2" remote="ImPrashantt" clone-depth="1" >
+     <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>    
  
   <!-- caf blobs -->
   <project path="" name="android_hardware_qcom_audio" revision="11-4.4" remote="wHo-EM-i" clone-depth="1" />
