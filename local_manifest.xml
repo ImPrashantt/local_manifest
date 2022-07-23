@@ -22,7 +22,7 @@
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/media" />
-  <remove-project name="vendor/pixeldust" />  
+  <remove-project name="android_vendor_pixeldust" />  
   
   <!-- Extras -->  
   
@@ -32,7 +32,8 @@
   </project>
  
   <project path="vendor/pixeldust" name="android_vendor_pixeldust" revision="sc-v2" remote="ImPrashantt" clone-depth="1" >
-     <linkfile src="build.sh" dest="rom-build.sh" />
+    <copyfile src="build/tools/build.sh" dest="rom-build.sh" />
+    <linkfile src="build/tools/merge-aosp.sh" dest="merge-aosp.sh" />    
   </project>    
  
   <!-- caf blobs -->
