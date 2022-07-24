@@ -18,10 +18,10 @@
   
   <!-- Remove -->  
 
-  <remove-project name="platform/vendor/qcom-opensource/usb" />
-  <remove-project name="vendor_qcom_opensource_commonsys-intf_display" />  
-  <remove-project name="device_qcom_common" />  
-  <remove-project name="ThankYouMario/proprietary_vendor_qcom_common" />
+  <remove-project name="android_vendor_qcom-opensource_usb" />
+  <remove-project name="android_vendor_qcom_opensource_commonsys-intf_display" />  
+  <remove-project name="android_device_qcom_common" />  
+  <remove-project name="proprietary_vendor_qcom_common" />
   
   <!-- Extras -->  
 
