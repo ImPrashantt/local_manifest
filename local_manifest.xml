@@ -19,15 +19,15 @@
   <!-- Remove -->  
 
   <remove-project name="platform/vendor/qcom-opensource/usb" />
-  <remove-project name="android_vendor_pixeldust" />  
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />  
   
   <!-- Extras -->  
- 
-  <project path="vendor/pixeldust" name="android_vendor_pixeldust" revision="sc-v2" remote="ImPrashantt" clone-depth="1" >
-    <copyfile src="build/tools/build.sh" dest="rom-build.sh" />
-    <linkfile src="build/tools/merge-aosp.sh" dest="merge-aosp.sh" />    
-  </project>    
-  
+
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" revision="sapphire" remote="wHo-EM-i" clone-depth="1" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>  
+
 </manifest>
 
 
