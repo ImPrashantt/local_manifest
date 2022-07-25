@@ -30,7 +30,7 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
   </project>  
   
-  <project path="device/qcom/common" name="android_device_qcom_common" revision="sapphire" remote="wHo-EM-i" >
+  <project path="device/qcom/common" name="android_device_qcom_common" revision="sapphire" remote="ImPrashantt" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>  
   
