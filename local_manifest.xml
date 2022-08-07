@@ -7,18 +7,11 @@
       <remote name="SB"
           fetch="https://github.com/Syberia-lavender" />  
       
-  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender-1" remote="ImPrashantt" revision="11"/>
-  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender-1" remote="SB" revision="11" />
-  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="ImPrashantt" revision="qti" />      
-      
-    <!-- Replacements -->
-      
-  <project path="hardware/qcom/display" name="hardware_qcom-caf_display_msm8998" remote="ImPrashantt" revision="11-re"/>
-      
-  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom-caf_audio_msm8998" remote="ImPrashantt" revision="11"/>
-
-  <project path="hardware/qcom/media" name="hardware_qcom-caf_media_msm8998" remote="ImPrashantt" revision="11"/>
-      
-  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="ImPrashantt" revision="arrow-11.0"/>      
+      <remote name="nexus"
+          fetch="https://github.com/Syberia-lavender" />  
+            
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="ImPrashantt" revision="11" />
+  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="SB" revision="11" />
+  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="projects-nexus" revision="qti" />           
       
 </manifest>
