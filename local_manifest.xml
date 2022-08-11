@@ -4,19 +4,13 @@
       <remote name="Prashant-1695"
           fetch="https://github.com/Prashant-1695" />       
       
-      <remote name="wHo-EM-i"
-          fetch="https://github.com/wHo-EM-i" />           
+      <remote name="nexus"
+          fetch="https://github.com/projects-nexus" />           
       
-  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prashant-1695" revision="fluid" />
+  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prashant-1695" revision="fusion" />
       
   <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="Prashant-1695" revision="12.1" />
       
-  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="Prashant-1695" revision="qti" />    
-      
-    <!-- Replacements -->
-      
-  <remove-project name="bionic" />
-      
-  <project path="bionic" name="bionic" remote="wHo-EM-i" revision="fluid"/>
+  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="nexus" revision="qti" />    
       
 </manifest>
