@@ -13,4 +13,8 @@
       
   <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="projects-nexus" revision="qti" />
    
+        <remove-project name="RiceDroid/android_vendor_rice" /> 
+      
+        <project path="vendor/lineage" name="android_vendor_rice" remote="ImPrashantt" revision="twelve" />      
+      
 </manifest>
