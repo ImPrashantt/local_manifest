@@ -29,4 +29,7 @@
         <project path="kernel/xiaomi/sdm660" name="android_kernel_xiaomi_southwest-4.19" remote="pix106" revision="main" clone-depth="1" />
         <!--<project path="device/qcom/sepolicy-legacy-um" name="EdwinMoq/android_device_qcom_sepolicy" remote="github" revision="lineage-19.0-legacy-um" clone-depth="1" />  -->
 
+   <!-- Replacements -->
+        <remove-project name="android_vendor_qcom_opensource_display-commonsys" />
+        <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="Prash" revision="arrow-12.1" />
 </manifest>
