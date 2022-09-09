@@ -7,7 +7,7 @@
       <remote name="Prash"
           fetch="https://github.com/Prashant-1695" />        
       
-  <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prash" revision="12.1" />
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="Prash" revision="12.1" />
       
   <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="Prash" revision="12.1" />
       
@@ -18,5 +18,5 @@
   <remove-project name="android_bionic" />
       
   <project path="bionic" name="bionic" remote="Prash" revision="superior" />  
-      
+
 </manifest>
