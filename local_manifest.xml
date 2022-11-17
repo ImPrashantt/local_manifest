@@ -16,11 +16,11 @@
   
   <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="nexus" revision="qti" />
 
-  <remove-project name="ardware_qcom-caf_msm8998_audio" /> 
+  <remove-project name="hardware_qcom-caf_msm8998_audio" /> 
 
-  <remove-project name="ardware_qcom-caf_msm8998_media" /> 
+  <remove-project name="hardware_qcom-caf_msm8998_media" /> 
 
-  <remove-project name="ardware_qcom-caf_msm8998_display" /> 
+  <remove-project name="hardware_qcom-caf_msm8998_display" /> 
   
   <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="arrow" revision="arrow-13.0-caf-msm8998" />
 
