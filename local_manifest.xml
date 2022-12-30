@@ -1,56 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-        <remote name="wHo-EM-i"
-                fetch="https://github.com/wHo-EM-i" />    
-        <remote name="Prash"
-                fetch="https://github.com/Prashant-1695" />
-        <remote name="nexus"               
-                fetch="https://github.com/projects-nexus" />   
-        <remote name="LD"               
-                fetch="https://github.com/lavender-dump" />         
-        <remote name="xenxynon"
-                fetch="https://github.com/xenxynon" />
-        <remote name="XS"
-                fetch="https://github.com/XenStuff" />
-        <remote name="lab"
-                fetch="https://github.com/xenxynon-lab-404"
-                revision="refs/heads/shinka" />
+      <remote name="Miku"
+          fetch="https://github.com/MikuHatsune16" />
 
-        <!-- Trees -->
-        <project path="device/xiaomi/lavender" name="android_device_xiaomi_lavender" remote="Prash" revision="caf-12.1" />
-        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="Prash" revision="caf-12.1" />
-        <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="lab"/>
+      <remote name="nexus"
+          fetch="https://github.com/projects-nexus" /> 
+      
+      <remote name="wHo-EM-i"
+          fetch="https://github.com/wHo-EM-i" /> 
 
-        <!-- hals -->
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_vendor_qcom_opensource_audio-hal_primary-hal" remote="lab" />
-        <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="lab" />
-        <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="lab" />
+      <remote name="clang"    
+          fetch="https://gitlab.com/Project-Nexus" />
+      
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="Miku" revision="13-CLO" />
+      
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Miku" revision="13-CLO" />
 
-        <!-- kernel -->
-        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_lavender-LTO" remote="nexus" revision="qti" clone-depth="1" />
+  <project path="kernel/xiaomi/lavender" name="android_xtreme_kernel_lavender" remote="nexus" revision="topaz" />
 
-        <!-- DeviceSettings -->
-        <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.1" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="13-4.4" remote="wHo-EM-i" clone-depth="1" />
 
-        <!-- extras -->
-        <remove-project name="android_vendor_qcom-opensource_display-commonsys" />
-        <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="lab" >
-        <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-        </project>
-        <remove-project name="android_bionic" />
-        <project path="bionic" name="bionic" remote="lab" />
-        <remove-project name="android_vendor_404" />
-        <project path="vendor/404" name="android_vendor_404" remote="LD" revision="shinka" />
-        <project path="hardware/google/pixel" name="hw_google_pixel" groups="generic_fs,pixel" remote="wHo-EM-i" revision="12.1" />
-        <remove-project name="platform/vendor/qcom-opensource/usb" />
-        <project path="vendor/qcom-opensource/usb" name="usb" remote="lab" >
-        <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
-        </project>  
-        <remove-project name="proprietary_vendor_qcom_common" />
-        <project path="vendor/qcom/common" name="vendor_qcom_common" revision="12" remote="wHo-EM-i" clone-depth="1" />
-        <remove-project name="android_device_qcom_common" />
-        <project path="device/qcom/common" name="android_device_qcom_common" revision="sapphire" remote="wHo-EM-i" >
-          <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-        </project>        
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" revision="13-4.4" remote="wHo-EM-i" clone-depth="1" />
+
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" revision="13-4.4" remote="wHo-EM-i" clone-depth="1" />      
+      
+  <remove-project name="android_vendor_qcom-opensource_power" />
+
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" revision="tokui" remote="Miku" clone-depth="1" />
+
+  <project path="prebuilts/clang/host/linux-x86/nexus-clang" name="nexus-clang" remote="clang" clone-depth="1" revision="nexus-14" />
+
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um-1" remote="wHo-EM-i" revision="sushi" clone-depth="1" />
+
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-20.0" />
+
 </manifest>
