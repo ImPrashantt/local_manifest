@@ -13,11 +13,11 @@
       <remote name="clang"    
           fetch="https://gitlab.com/Project-Nexus" />
       
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="Miku" revision="13-CLO" />
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="Miku" revision="13-CLO" clone-depth="1" />
       
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Miku" revision="13-CLO" />
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Miku" revision="13-CLO" clone-depth="1" />
 
-  <project path="kernel/xiaomi/lavender" name="android_xtreme_kernel_lavender" remote="nexus" revision="topaz" />
+  <project path="kernel/xiaomi/lavender" name="android_xtreme_kernel_lavender" remote="nexus" revision="topaz" clone-depth="1" />
 
   <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" revision="13-4.4" remote="wHo-EM-i" clone-depth="1" />
 
@@ -33,6 +33,6 @@
 
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um-1" remote="wHo-EM-i" revision="sushi" clone-depth="1" />
 
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-20.0" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-20.0" clone-depth="1" />
 
 </manifest>
