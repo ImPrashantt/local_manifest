@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-      <remote name="ImPrashantt"
-          fetch="https://github.com/Prashant-1695" />        
+      <remote name="Miku"
+          fetch="https://github.com/MikuHatsune16" />
 
-      <remote name="projects-nexus"
-          fetch="https://github.com/projects-nexus" />       
+      <remote name="nexus"
+          fetch="https://github.com/projects-nexus" /> 
       
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="ImPrashantt" revision="12.1" />
+      <remote name="Prash"
+          fetch="https://github.com/Prashant-1695" />  
       
-  <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="ImPrashantt" revision="12.1" />
+      <remote name="ArrowOS"
+          fetch="https://github.com/ArrowOS" />       
       
-  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="projects-nexus" revision="qti" />
-   
-        <remove-project name="RiceDroid/android_vendor_rice" /> 
+      <remote name="clang"    
+          fetch="https://gitlab.com/Project-Nexus" />      
       
-        <project path="vendor/lineage" name="android_vendor_rice" remote="ImPrashantt" revision="twelve" />      
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="Miku" revision="13" />
+      
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Miku" revision="12.1" />
+
+  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="nexus" revision="lineage" />
+      
+  <project path="prebuilts/clang/host/linux-x86/nexus-clang" name="nexus-clang" remote="clang" clone-depth="1" revision="nexus-14" />
+      
+    <!-- Replacements -->
+      
+  <remove-project name="hardware_qcom_display" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-13.0-caf-msm8998" />
+      
+  <remove-project name="hardware_qcom_audio" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="ArrowOS" revision="arrow-13.0-caf-msm8998" />
+
+  <remove-project name="hardware_qcom_media" />
+  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="ArrowOS" revision="arrow-13.0-caf-msm8998" />      
       
 </manifest>
