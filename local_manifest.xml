@@ -20,15 +20,12 @@
       
   <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Miku" revision="12.1" />
 
-  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="nexus" revision="lineage" />
+  <project path="kernel/xiaomi/lavender" name="nexus_kernel_xiaomi_lavender" remote="nexus" revision="qti" />
       
   <project path="prebuilts/clang/host/linux-x86/nexus-clang" name="nexus-clang" remote="clang" clone-depth="1" revision="nexus-14" />
       
     <!-- Replacements -->
-
-  <remove-project name="frameworks_base" />
-  <project path="frameworks/base" name="frameworks_base" remote="Prash" revision="13" clone-depth="1" />
-      
+   
   <remove-project name="hardware_qcom_display" />
   <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="ArrowOS" revision="arrow-13.0-caf-msm8998" />
       
