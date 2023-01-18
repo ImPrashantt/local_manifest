@@ -27,7 +27,7 @@
 
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" revision="topaz" remote="wHo-EM-i" clone-depth="1" />
 
-  <project path="prebuilts/clang/host/linux-x86/nexus-clang" name="nexus-clang" remote="clang" clone-depth="1" revision="nexus-14" />
+  <project path="prebuilts/clang/host/linux-x86/clang-nexus" name="nexus-clang" remote="clang" clone-depth="1" revision="nexus-14" />
 
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um-1" remote="wHo-EM-i" revision="sushi" clone-depth="1" />
 
